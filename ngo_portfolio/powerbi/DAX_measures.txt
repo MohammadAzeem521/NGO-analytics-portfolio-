@@ -1,0 +1,109 @@
+// ============================================================================
+// NGO ANALYTICS — DAX MEASURES
+// Paste these into Power BI Desktop: Model view → New Measure
+// Assumes table names: fact_donations, dim_ngo, dim_date, dim_campaign,
+// fact_volunteer_hours (exactly as imported from /powerbi/star_schema/*.csv)
+// Author: Mohd Azeem
+// ============================================================================
+
+// ---------- CORE MEASURES ----------
+
+Total Donations (INR) =
+SUM(fact_donations[donation_amount_inr])
+
+Total Donations (Formatted) =
+"₹" & FORMAT([Total Donations (INR)] / 1000000, "#,##0.00") & "M"
+
+Number of Donations =
+COUNTROWS(fact_donations)
+
+Average Donation (INR) =
+AVERAGE(fact_donations[donation_amount_inr])
+
+Number of Active NGOs =
+DISTINCTCOUNT(fact_donations[ngo_id])
+
+Number of Campaigns =
+DISTINCTCOUNT(dim_campaign[campaign_id])
+
+Total Volunteer Hours =
+SUM(fact_volunteer_hours[hours_logged])
+
+Total Volunteers Engaged =
+SUM(fact_volunteer_hours[volunteer_count])
+
+
+// ---------- TIME INTELLIGENCE (requires dim_date marked as Date Table) ----------
+
+YoY Donations =
+CALCULATE(
+    [Total Donations (INR)],
+    SAMEPERIODLASTYEAR(dim_date[date])
+)
+
+YoY Growth % =
+DIVIDE(
+    [Total Donations (INR)] - [YoY Donations],
+    [YoY Donations],
+    0
+)
+
+Running Total Donations =
+CALCULATE(
+    [Total Donations (INR)],
+    FILTER(
+        ALLSELECTED(dim_date[date]),
+        dim_date[date] <= MAX(dim_date[date])
+    )
+)
+
+MTD Donations =
+TOTALMTD([Total Donations (INR)], dim_date[date])
+
+QTD Donations =
+TOTALQTD([Total Donations (INR)], dim_date[date])
+
+YTD Donations =
+TOTALYTD([Total Donations (INR)], dim_date[date])
+
+
+// ---------- DONOR / CAMPAIGN ANALYSIS ----------
+
+Recurring Donor Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(fact_donations), fact_donations[is_recurring] = 1),
+    COUNTROWS(fact_donations),
+    0
+)
+
+Corporate Donation Share % =
+DIVIDE(
+    CALCULATE([Total Donations (INR)], fact_donations[donor_type] = "Corporate"),
+    [Total Donations (INR)],
+    0
+)
+
+Campaign Achievement % =
+DIVIDE(
+    [Total Donations (INR)],
+    SUM(dim_campaign[target_amount_inr]),
+    0
+)
+
+Avg Hours per Volunteer =
+DIVIDE(
+    SUM(fact_volunteer_hours[hours_logged]),
+    SUM(fact_volunteer_hours[volunteer_count]),
+    0
+)
+
+
+// ---------- RANKING ----------
+
+NGO Rank by Donations =
+RANKX(
+    ALL(dim_ngo[ngo_name]),
+    CALCULATE([Total Donations (INR)]),
+    ,
+    DESC
+)

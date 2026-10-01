@@ -1,0 +1,62 @@
+campaign_id,ngo_id,campaign_name,channel,start_date,end_date,target_amount_inr,status
+CMP0001,NGO01,Smile Nutrition Program 2021,Corporate CSR,2021-02-21,2021-06-15,1500000,Completed
+CMP0002,NGO01,Smile Digital Literacy Push 2025,Offline Event,2025-02-17,2025-03-22,500000,Completed
+CMP0003,NGO01,Smile Nutrition Program 2021,Social Media,2021-03-03,2021-04-03,1000000,Completed
+CMP0004,NGO01,Smile Nutrition Program 2024,Offline Event,2024-02-24,2024-04-09,3000000,Completed
+CMP0005,NGO01,Smile Wildlife Protection Fund 2025,Offline Event,2025-07-16,2025-08-05,750000,Completed
+CMP0006,NGO02,CRY Emergency Relief 2021,Online Portal,2021-11-15,2022-01-01,2000000,Ongoing
+CMP0007,NGO02,CRY Digital Literacy Push 2021,Peer-to-Peer,2021-07-18,2021-09-21,2000000,Completed
+CMP0008,NGO02,CRY Disaster Response 2025,Online Portal,2025-02-03,2025-04-22,500000,Completed
+CMP0009,NGO02,CRY Digital Literacy Push 2025,Corporate CSR,2025-08-26,2025-12-04,2000000,Completed
+CMP0010,NGO02,CRY Girl Child Education 2021,Peer-to-Peer,2021-04-04,2021-07-17,1000000,Completed
+CMP0011,NGO02,CRY Skill Development 2022,Offline Event,2022-04-22,2022-05-24,3000000,Completed
+CMP0012,NGO02,CRY Nutrition Program 2021,Peer-to-Peer,2021-11-30,2022-02-05,2000000,Completed
+CMP0013,NGO03,Pratham Health Camp 2023,Offline Event,2023-12-30,2024-04-21,1000000,Ongoing
+CMP0014,NGO03,Pratham Elderly Care Support 2022,Peer-to-Peer,2022-07-07,2022-10-16,1000000,Completed
+CMP0015,NGO03,Pratham Disaster Response 2022,Peer-to-Peer,2022-04-15,2022-05-09,2000000,Completed
+CMP0016,NGO03,Pratham Nutrition Program 2022,Offline Event,2022-03-09,2022-06-09,2000000,Ongoing
+CMP0017,NGO03,Pratham Skill Development 2024,Corporate CSR,2024-08-09,2024-10-26,750000,Completed
+CMP0018,NGO03,Pratham Wildlife Protection Fund 2025,Social Media,2025-03-06,2025-06-05,1500000,Ongoing
+CMP0019,NGO04,Goonj Clean Water Initiative 2023,Offline Event,2023-01-12,2023-03-01,750000,Completed
+CMP0020,NGO04,Goonj Health Camp 2025,Corporate CSR,2025-03-28,2025-04-23,500000,Ongoing
+CMP0021,NGO04,Goonj Disaster Response 2024,Social Media,2024-05-06,2024-06-03,3000000,Ongoing
+CMP0022,NGO04,Goonj Elderly Care Support 2023,Online Portal,2023-12-20,2024-02-10,250000,Completed
+CMP0023,NGO04,Goonj Emergency Relief 2025,Peer-to-Peer,2025-04-24,2025-08-04,2000000,Ongoing
+CMP0024,NGO04,Goonj Wildlife Protection Fund 2021,Peer-to-Peer,2021-11-20,2022-02-06,250000,Completed
+CMP0025,NGO04,Goonj Elderly Care Support 2023,Social Media,2023-11-06,2023-12-09,1500000,Completed
+CMP0026,NGO04,Goonj Clean Water Initiative 2021,Social Media,2021-11-10,2022-01-16,750000,Completed
+CMP0027,NGO05,HelpAge Winter Clothing Drive 2023,Peer-to-Peer,2023-09-28,2023-10-20,500000,Completed
+CMP0028,NGO05,HelpAge Emergency Relief 2021,Offline Event,2021-04-29,2021-06-18,500000,Completed
+CMP0029,NGO05,HelpAge Health Camp 2025,Offline Event,2025-04-07,2025-07-04,750000,Completed
+CMP0030,NGO05,HelpAge Nutrition Program 2022,Social Media,2022-06-27,2022-09-22,3000000,Completed
+CMP0031,NGO05,HelpAge Elderly Care Support 2024,Peer-to-Peer,2024-12-31,2025-02-28,3000000,Ongoing
+CMP0032,NGO05,HelpAge Nutrition Program 2023,Corporate CSR,2023-11-26,2024-02-11,500000,Completed
+CMP0033,NGO05,HelpAge Digital Literacy Push 2022,Corporate CSR,2022-11-24,2022-12-16,1000000,Completed
+CMP0034,NGO06,CARE Nutrition Program 2024,Online Portal,2024-12-20,2025-03-30,250000,Completed
+CMP0035,NGO06,CARE Skill Development 2022,Offline Event,2022-11-08,2022-12-07,1000000,Completed
+CMP0036,NGO06,CARE Nutrition Program 2024,Offline Event,2024-01-10,2024-02-15,5000000,Ongoing
+CMP0037,NGO06,CARE Elderly Care Support 2022,Offline Event,2022-01-25,2022-02-26,500000,Completed
+CMP0038,NGO06,CARE Wildlife Protection Fund 2023,Online Portal,2023-05-18,2023-07-29,5000000,Completed
+CMP0039,NGO07,Akshaya Girl Child Education 2023,Online Portal,2023-04-05,2023-07-27,2000000,Completed
+CMP0040,NGO07,Akshaya Health Camp 2022,Offline Event,2022-01-28,2022-03-13,5000000,Completed
+CMP0041,NGO07,Akshaya Emergency Relief 2022,Offline Event,2022-07-25,2022-10-12,1000000,Completed
+CMP0042,NGO07,Akshaya Emergency Relief 2021,Corporate CSR,2021-04-14,2021-07-26,250000,Completed
+CMP0043,NGO07,Akshaya Nutrition Program 2023,Offline Event,2023-04-13,2023-07-04,5000000,Completed
+CMP0044,NGO08,WWF Skill Development 2023,Offline Event,2023-02-16,2023-03-08,3000000,Completed
+CMP0045,NGO08,WWF Health Camp 2023,Corporate CSR,2023-05-17,2023-09-03,5000000,Completed
+CMP0046,NGO08,WWF Wildlife Protection Fund 2022,Peer-to-Peer,2022-03-22,2022-04-18,250000,Completed
+CMP0047,NGO08,WWF Clean Water Initiative 2021,Social Media,2021-04-13,2021-07-16,5000000,Completed
+CMP0048,NGO08,WWF Health Camp 2021,Online Portal,2021-04-27,2021-07-21,500000,Completed
+CMP0049,NGO08,WWF Emergency Relief 2024,Social Media,2024-10-14,2024-12-03,3000000,Completed
+CMP0050,NGO09,GiveIndia Elderly Care Support 2024,Social Media,2024-06-22,2024-07-22,3000000,Completed
+CMP0051,NGO09,GiveIndia Nutrition Program 2022,Peer-to-Peer,2022-06-19,2022-08-04,2000000,Ongoing
+CMP0052,NGO09,GiveIndia Women Empowerment Fund 2021,Peer-to-Peer,2021-09-26,2022-01-09,1500000,Completed
+CMP0053,NGO09,GiveIndia Emergency Relief 2021,Social Media,2021-01-20,2021-04-08,500000,Completed
+CMP0054,NGO09,GiveIndia Winter Clothing Drive 2023,Online Portal,2023-11-03,2023-12-26,750000,Completed
+CMP0055,NGO10,SEWA Clean Water Initiative 2022,Peer-to-Peer,2022-08-07,2022-09-16,5000000,Completed
+CMP0056,NGO10,SEWA Elderly Care Support 2024,Online Portal,2024-09-29,2024-12-28,1500000,Completed
+CMP0057,NGO10,SEWA Wildlife Protection Fund 2022,Social Media,2022-06-26,2022-07-30,500000,Completed
+CMP0058,NGO10,SEWA Wildlife Protection Fund 2022,Peer-to-Peer,2022-07-12,2022-09-06,1000000,Completed
+CMP0059,NGO10,SEWA Clean Water Initiative 2024,Offline Event,2024-11-08,2025-02-17,1500000,Completed
+CMP0060,NGO10,SEWA Skill Development 2021,Online Portal,2021-04-15,2021-05-16,3000000,Completed
+CMP0061,NGO10,SEWA Elderly Care Support 2022,Peer-to-Peer,2022-11-15,2023-03-13,750000,Completed
